@@ -1,0 +1,86 @@
+.App {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.App-header {
+  margin-bottom: 2rem;
+}
+
+.App-header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.App-header p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.App-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.new-lyrics-button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(108, 99, 255, 0.2);
+}
+
+.new-lyrics-button:hover {
+  background-color: #5a52d8;
+  transform: translateY(-2px);
+}
+
+.new-lyrics-button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.error-message {
+  color: #e74c3c;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: rgba(231, 76, 60, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.App-footer {
+  margin-top: 2rem;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .App {
+    padding: 1rem;
+  }
+  
+  .App-header h1 {
+    font-size: 2.2rem;
+  }
+  
+  .App-main {
+    padding: 1.5rem;
+  }
+}

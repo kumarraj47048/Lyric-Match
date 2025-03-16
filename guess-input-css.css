@@ -1,0 +1,62 @@
+.guess-input-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  gap: 1rem;
+}
+
+.guess-input {
+  padding: 1rem;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  transition: border-color 0.3s ease;
+}
+
+.guess-input:focus {
+  outline: none;
+  border-color: #6c63ff;
+}
+
+.guess-input:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+
+.check-button {
+  padding: 1rem;
+  font-size: 1rem;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.check-button:hover {
+  background-color: #27ae60;
+}
+
+.check-button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+@media (min-width: 600px) {
+  .guess-input-container {
+    flex-direction: row;
+  }
+  
+  .guess-input {
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .check-button {
+    border-radius: 0 5px 5px 0;
+    min-width: 150px;
+  }
+}
